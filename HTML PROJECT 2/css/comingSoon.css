@@ -1,0 +1,79 @@
+* {box-sizing:border-box}
+.slides {display:none}
+
+.container2 {
+  max-width: 999px;
+  position: relative;
+  margin: auto;
+}
+
+.caption {
+  font-size: 16px;
+  padding: 9px 14px;
+  position: absolute;
+  color: #f2f2f2;
+  bottom: 9px;
+  width: 100%;
+  caption-align: center;
+}
+
+.numbercaption {
+  padding: 8px 12px;
+  position: absolute;
+  color: #f2f2f2;
+  font-size: 12px;
+  top: 0;
+}
+.top-center {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    left : 15%;
+}
+.top-center-bottom {
+    position: absolute;
+    bottom: 5%;
+    right: 35%;
+    left : 46%;
+}
+.bottom {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    left : 15%;
+}
+
+.dot {
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 51%;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  transition: background-color 0.8s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.6s;
+  animation-name: fade;
+  animation-duration: 1.6s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 301px) {
+  .caption {font-size: 12px}
+}

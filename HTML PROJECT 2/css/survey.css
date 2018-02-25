@@ -1,0 +1,87 @@
+body {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  background-color: #BFC9CA;
+}
+h3 {
+  font-weight: 300;
+}
+
+.button {
+  padding: 1rem;
+  color: white;
+  background: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 0 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+@media (min-width: 900px) {
+  .option {
+    width: 20vw;
+    margin-top: 3rem;
+  }
+}
+.emoji {
+  font-size: 1.5rem;
+  -webkit-transition: font-size 300ms ease;
+  transition: font-size 300ms ease;
+  cursor: pointer;
+  margin: 0;
+}
+
+.emotion-selected {
+  font-size: 2rem;
+}
+
+.react {
+  font-size: 1rem;
+  opacity: 0;
+}
+
+.react-fade-in {
+  -webkit-animation: fadeIn 300ms ease;
+          animation: fadeIn 300ms ease;
+  opacity: 1;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ques {
+  margin-top: 1rem;
+}

@@ -1,0 +1,167 @@
+<html>
+<link href='../css/style.css' rel='stylesheet' >
+<head>
+<style>
+/* Caption text */
+.top-left {
+  position: absolute;
+  top: 8%;
+  left: 25%;
+}
+.top-right {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+}
+.table, th, td {
+    text-align: center;
+}
+.button {
+    border: black;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+}
+</style>
+</head>
+<ul>
+  <li><a href="../html/index.html">Home</a></li>
+  <li><a href="../html/festivals.html">Festivals</a></li>
+  <li><a href="../html/places.html">Places</a></li>
+  <li><a href="../html/food.html">Food</a></li>
+  <li><a href="../html/about.html">Sports</a></li>
+  <li><a href="../html/isro.html">ISRO</a></li>
+  <li><a href="../html/bollywood.html">Bollywood</a></li>
+  <li><a href="../html/it.html">IT Sector</a></li>
+</ul>
+<body>
+  <div class="slides">
+    <div class="top-right">
+    <table>
+     <tr>
+     <td>
+    <img src="../img/holi.jpeg" width="750" height="600">
+    <div class="top-left">
+      <font size="5">
+      <b>
+        HOLI
+      </b>
+    </font>
+     </div>
+   </td>
+   <td>
+       <b>
+         <font color="white">
+          <p>
+         Holi ( /ˈhoʊliː/; Sanskrit: होली Holī) is a Hindu spring festival celebrated in India and Nepal, also known as the "festival of colours" or the "festival of love". The festival signifies the victory of good over evil, the arrival of spring, end of winter, and for many a festive day to meet others, play and laugh, forget and forgive, and repair broken relationships.
+        </p>
+        <p>
+          It is also celebrated as a thanksgiving for a good harvest. It lasts for a night and a day, starting on the evening of the Purnima (Full Moon day) falling in the Vikram Samvat Hindu Calendar month of Phalguna, which falls somewhere between the end of February and the middle of March in the Gregorian calendar. 
+         </p>
+         </font>
+       </b>
+    </td>
+  </tr>
+</table>
+</div>
+  </div>
+
+  <div class="slides">
+    <div class="top-right">
+    <table>
+     <tr>
+     <td>
+    <img src="../img/diwali.jpg" width="750" height="600">
+    <div class="top-left">
+      <font color="white" size="5">
+      <b>
+        DIWALI
+      </b>
+    </font>
+     </div>
+   </td>
+   <td>
+       <b>
+         <font color="white">
+           <p>
+           Diwali or Deepavali is the Hindu festival of lights celebrated every year in autumn in the northern hemisphere (spring in southern hemisphere). It is an official holiday in Fiji, Guyana, India, Malaysia, Mauritius, Myanmar, Nepal, Singapore, Sri Lanka, Suriname, Trinidad and Tobago, and recently Sindh Province in Pakistan.
+           </p>
+           <p>
+           One of the most popular festivals of Hinduism, it spiritually signifies the victory of light over darkness, good over evil, knowledge over ignorance, and hope over despair. 
+         </p>
+         </font>
+       </b>
+    </td>
+  </tr>
+</table>
+</div>
+  </div>
+
+  <div class="slides">
+    <div class="top-right">
+    <table>
+     <tr>
+     <td>
+    <img src="../img/ganesh.jpg" width="750" height="600">
+    <div class="top-left">
+    <font color="white" size="5">
+      <b>
+        GANESH CHATURTHI
+      </b>
+    </font>
+     </div>
+   </td>
+   <td>
+       <b>
+         <font color="white">
+           <p>
+          Ganesh Chaturthi (IAST: Gaṇēśa Chaturthī), also known as Vinayaka Chaturthi (Vināyaka Chaturthī) is the Hindu festival that reveres god Ganesha. A ten-day festival, it starts on the fourth day of Hindu luni-solar calendar month Bhadrapada, which typically falls in Gregorian months of August or September.
+          </p>
+          <p>
+           The festival is marked with installation of Ganesha clay idols privately in homes, or publicly on elaborate pandals (temporary stage). Observations include chanting of Vedic hymns and Hindu texts such as Ganapati Upanishad, prayers and vrata (fasting).
+          </p>
+         </font>
+       </b>
+    </td>
+  </tr>
+</table>
+</div>
+  </div>
+
+  <div class="bottom-right">
+    <button class="button" onclick="plus(-1)">&#10094;</button>
+    <button class="button" onclick="plus(1)">&#10095;</button>
+  </div>
+</div>
+
+<script>
+var index = 1;
+show(index);
+
+function plus(n) {
+  show(index += n);
+}
+
+function show(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  if (n > x.length) {index = 1}
+  if (n < 1) {index = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[index-1].style.display = "block";
+}
+</script>
+</body>
+
+</html>

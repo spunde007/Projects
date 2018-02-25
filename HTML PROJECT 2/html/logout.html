@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Logout</title>
+<link href='../css/login.css' rel='stylesheet'>
+<script type="text/javascript">
+    window.history.forward();
+    function noBack() { window.history.forward(); }  
+function Redirect() 
+{  
+window.location="login.html"; 
+} 
+setTimeout('Redirect()', 0010);   
+</script>  
+</head>
+<body onload="noBack();"
+    onpageshow="if (event.persisted) noBack();"> 
+ </body>
+</html>

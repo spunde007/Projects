@@ -1,0 +1,75 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+.expander.active:hover {
+  background:#2E86C1;
+  color:rgba(255,255,255,0.8);
+}
+
+.active .bottom-arrow {
+  -o-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+        
+.bottom-arrow {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgba(255,255,255,0.8);
+  position:absolute;
+  right: 1.5em;
+  top: 1.5em;
+}
+
+.expander {
+  cursor:pointer;
+  width:100%;
+  background:#00829E;
+  color:rgba(255,255,255,0.8);
+  padding:1em;
+  float:right;
+  position:relative;
+}
+
+header {
+  float:left;
+  width:100%;
+  padding:5em 20% 2em;
+  margin-bottom:1em;
+}
+
+.expander:hover {
+  background:#2E86C1;
+  color:rgba(255,255,255,1);
+}
+
+.expander:hover .bottom-arrow {
+  border-top: 8px solid rgba(255,255,255,1);
+}
+
+.wrapper {
+  overflow:hidden;
+  background:#F4F6F7;
+  float:right;
+  width:100%;
+  margin-bottom:2em;
+}
+
+.content {
+  margin-top:-100%;
+}
+
+.wrapper.open .content {
+  margin-top:0;
+}
+
+section {
+  float:right;
+  width:61%;
+  margin:3em 20%;
+}
+
+.wrapper, .content, .expander, .bottom-arrow, .toggle-all span {-webkit-transition:all .20s linear;  -moz-transition:all .20s linear;  -o-transition:all .20s linear;  transition:all .20s linear;}
+

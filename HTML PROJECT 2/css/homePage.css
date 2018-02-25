@@ -1,0 +1,101 @@
+body{
+  -webkit-animation: 8s linear 0s normal none infinite animate;
+  animation: 8s linear 0s normal none infinite animate;
+  -moz-animation: 8s linear 0s normal none infinite animate;
+  -ms-animation: 8s linear 0s normal none infinite animate;
+  -o-animation: 8s linear 0s normal none infinite animate;
+  margin:0;
+  padding:0;
+  font-family: arial, helvetica, sans-serif;
+  font-size:14px;
+    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0; 
+}
+
+#wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.top-medium {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    left : 0%;
+    font-size: 20px;
+}
+
+#content {
+  -webkit-perspective: 800;
+  width: 600px;
+  margin: 150px auto 0 auto;
+  -webkit-perspective-origin: 50% 0px;
+  -webkit-transition: -webkit-perspective, 1s;
+}
+
+@-o-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+ 
+@keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+#content:hover {
+  -webkit-perspective-origin: 50% 0px;
+}
+
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotateY(0); }
+  to{ -webkit-transform: rotateY(-360deg);}
+}
+
+#figure{
+  margin: 0 auto;
+  height: 175px;
+  width: 175px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 14s infinite linear;
+  text-shadow: 0px  -1px  1px  #000;
+   
+}
+
+.plane {
+  position: absolute;
+  height:200px;
+  width: 200px;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  font-size: 10em;
+  color: #F7F9F9;
+}
+
+
+#figure > .p1 {-webkit-transform: translateZ(250px); }
+#figure > .p3 {-webkit-transform: rotateY(45deg) translateZ(250px); }
+#figure > .p2 {-webkit-transform: rotateY(90deg) translateZ(250px); }
+#figure > .p4 {-webkit-transform: rotateY(135deg) translateZ(250px); }
+#figure > .p5 {-webkit-transform: rotateY(180deg) translateZ(250px); }
+#figure > .p6 {-webkit-transform: rotateY(225deg) translateZ(250px); }
+#figure > .p7 {-webkit-transform: rotateY(270deg) translateZ(250px); }
+#figure > .p8 {-webkit-transform: rotateY(315deg) translateZ(250px); }
+
+@-ms-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@-webkit-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+ 
+@-moz-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+ 
+
+

@@ -1,0 +1,58 @@
+body{
+  background-size: cover;
+  font-family: Georgia;
+}
+ul li{
+  width: 200px;
+  height: 38px;
+  float: left;
+  font-size: 16px;
+}
+
+#menu {
+    margin:0 auto;
+    display: inline-block;
+    list-style:none;
+    padding:0;
+}
+
+.top-corner {
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    left : 90%;
+    font-size: 20px;
+}
+
+.container{
+    text-align: center;
+    width: auto;
+}
+
+#menu li {
+    float: left;
+    background-color:#F7F9F9;
+}
+
+#menu li a {
+    color:#069;
+    border-right:1px solid #ccc;
+    font-weight:bold;
+    display:block;
+    padding:10px 10px;
+    text-decoration:none;
+}   
+
+#menu li a:hover {
+    color:#c00;
+    background-color:#D5D8DC;
+}
+#footer{
+  height:10px;
+  width:100%;
+  color:#fff;
+  background-color:none;
+  text-align:center;
+  position:absolute;
+  bottom:0;
+}

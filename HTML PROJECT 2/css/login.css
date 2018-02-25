@@ -1,0 +1,48 @@
+body{
+  background: url('../img/shopping1.jpg') no-repeat;
+  background-size: cover;
+  font-family: Verdana;
+}
+label{
+color: white;
+font-size: 14px;
+font-weight: bold;
+}
+.note{
+color:white;
+}
+div.container{
+top:30%;	
+left:50%;	
+right: 50%;	
+width: 200px;
+height: 200px;
+margin:35px auto;
+}
+input[type=button]{
+font-size: 15px;
+background:#EC7063;
+border: 1px;
+color: black;
+cursor: pointer;
+width: 100%;
+padding: 10px 0;
+}
+input[type=text],input[type=password]{
+width: 100%;
+height: 30px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px;
+font-size: 12px;
+color: black;
+border-radius: 5px;
+background:#F9E79F;
+}
+.center {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

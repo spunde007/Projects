@@ -1,0 +1,162 @@
+<html>
+<link href='../css/style.css' rel='stylesheet' >
+<head>
+<style>
+/* Caption text */
+.top-left {
+  position: absolute;
+  top: 8%;
+  left: 25%;
+}
+.top-right {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+}
+.table, th, td {
+    text-align: center;
+}
+.button {
+    border: black;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+}
+</style>
+</head>
+<ul>
+  <li><a href="../html/index.html">Home</a></li>
+  <li><a href="../html/festivals.html">Festivals</a></li>
+  <li><a href="../html/places.html">Places</a></li>
+  <li><a href="../html/food.html">Food</a></li>
+  <li><a href="../html/about.html">Sports</a></li>
+  <li><a href="../html/isro.html">ISRO</a></li>
+  <li><a href="../html/bollywood.html">Bollywood</a></li>
+  <li><a href="../html/it.html">IT Sector</a></li>
+</ul>
+<body>
+  <div class="slides">
+    <div class="top-right">
+    <table>
+     <tr>
+     <td>
+    <img src="../img/rabri.jpg" width="750" height="600">
+    <div class="top-left">
+     </div>
+   </td>
+   <td>
+       <b>
+         <font color="white">
+           <p>
+              Rabri is a sweet, condensed-milk-based dish, originating from the Indian subcontinent, made by boiling the milk on low heat for a long time until it becomes dense and changes its color to pinkish. Sugar, spices and nuts are added to it to give it flavor. It is chilled and served as dessert.
+            </p>
+            <p>
+              Rabri is the main ingredient in several desserts, such as rasabali, chhena kheeri, and khira sagara. Hathras is famous for Rabri and other sweets prepared from Ghee.
+            </p>
+         </font>
+       </b>
+    </td>
+  </tr>
+</table>
+</div>
+  </div>
+
+  <div class="slides">
+    <div class="top-right">
+    <table>
+     <tr>
+     <td>
+    <img src="../img/jalebi.jpg" width="750" height="600">
+    <div class="top-left">
+      <font color="white" size="5">
+      <b>
+        JALEBI
+      </b>
+    </font>
+     </div>
+   </td>
+   <td>
+       <b>
+         <font color="white">
+           <p>
+             Jalebi, also known as zulbia, is a sweet popular in countries of South Asia, West Asia, North Africa, and East Africa. It is made by deep-frying maida flour (plain flour or all-purpose flour) batter in pretzel or circular shapes, which are then soaked in sugar syrup. They are particularly popular in Persia and Indian subcontinent.
+             </p>
+            <p>
+             The sweets are served warm or cold. This dish is not to be confused with similar sweets and variants like imarti and chhena jalebi.
+           </p>
+         </font>
+       </b>
+    </td>
+  </tr>
+</table>
+</div>
+  </div>
+
+  <div class="slides">
+    <div class="top-right">
+    <table>
+     <tr>
+     <td>
+    <img src="../img/gulab jamun.jpg" width="750" height="600">
+    <div class="top-left">
+    <font color="white" size="5">
+      <b>
+        GULAB JAMUN
+      </b>
+    </font>
+     </div>
+   </td>
+   <td>
+       <b>
+         <font color="white">
+           <p>
+   Gulab jamun (also spelled gulaab jamun) is a milk-solid-based South Asian sweet, particularly popular in the Indian subcontinent, notably India, Nepal (where it is known as lal mohan), Pakistan and Bangladesh, as well as Myanmar.
+   </p>
+     <p>
+   It is also common in Mauritius Fiji, southern and eastern Africa, Malay Peninsula, and the Caribbean countries of Trinidad and Tobago, Guyana, Suriname and Jamaica. It is made mainly from milk solids, traditionally from freshly curdled milk. It is often garnished with dried nuts like almonds to enhance flavour.
+   </p>
+         </font>
+       </b>
+    </td>
+  </tr>
+</table>
+</div>
+  </div>
+
+  <div class="bottom-right">
+    <button class="button" onclick="plus(-1)">&#10094;</button>
+    <button class="button" onclick="plus(1)">&#10095;</button>
+  </div>
+</div>
+
+<script>
+var index = 1;
+show(index);
+
+function plus(n) {
+  show(index += n);
+}
+
+function show(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  if (n > x.length) {index = 1}
+  if (n < 1) {index = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[index-1].style.display = "block";
+}
+</script>
+</body>
+
+</html>
